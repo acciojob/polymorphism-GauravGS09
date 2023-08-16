@@ -10,8 +10,10 @@ public class Main {
         int result2 = p.product(2, 4, 6);
         System.out.println(result2);
 
-        int result3 = p.product(2, 4, 6,8);
+
+        double result3 = p.product(2.5, 3.5);
         System.out.println(result3);
+
     }
 static class Product{
     public int product(int x, int y) {
@@ -20,8 +22,9 @@ static class Product{
     public int product(int x, int y, int z) {
         return x * y * z;
     }
-    public int product(int x, int y, int z, int f) {
-        return x * y * z * f;
-        }
+
+    public double product(double x, double y) {
+        return x * y;
+    }
      }
 }
