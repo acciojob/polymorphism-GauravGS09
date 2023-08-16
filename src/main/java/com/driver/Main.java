@@ -4,18 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Product p = new Product();
 
-        int result1 = p.product(3, 5);
-        System.out.println(result1);
-
-        int result2 = p.product(2, 4, 6);
-        System.out.println(result2);
-
-
-        double result3 = p.product(2.5, 3.5);
-        System.out.println(result3);
+        System.out.println(p.product(5,4));
+        System.out.println(p.product(5,4,6));
+        System.out.println(p.product(5.2,4.9));
 
     }
-static class Product{
+public static class Product{
     public int product(int x, int y) {
         return x * y;
     }
